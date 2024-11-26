@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preload" as="font" href="./fonts/lato-v20-latin-ext_latin-regular.woff2" type="font/woff2">
+  <link rel="preload" as="font" href="./fonts/lato-v20-latin-ext_latin-700.woff2" type="font/woff2">
+  <link rel="preload" as="font" href="./fonts/lato-v20-latin-ext_latin-900.woff2" type="font/woff2">
+  <link rel="preload" as="font" href="./fonts/merriweather-v27-latin-ext_latin-regular.woff2" type="font/woff2">
+  <link rel="preload" as="font" href="./fonts/merriweather-v27-latin-ext_latin-700.woff2" type="font/woff2">
+  <link rel="preload" as="font" href="./fonts/merriweather-v27-latin-ext_latin-900.woff2" type="font/woff2">
+  <link rel="preload" as="font" href="./fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.woff" type="font/woff">
+  <link rel="stylesheet" href="css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Build Pixar USD</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+
+      <nav class="header-nav d-none d-lg-block">
+        <ul class="d-block d-lg-flex">
+          <li class="active">
+            <a href="index.html" title="Start page">Home</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" title="Blog articles">Blog articles</a>
+            <ul class="dropdown-menu">
+              <li class="nav-elipse-blue">
+                <a href="./blog_list.html" title="Blog CSS articles">Graphic</a>
+              </li>
+              <li class="nav-elipse-red">
+                <a href="./blog_list.html" title="Blog HTML articles">Electronic</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="./about_me.html" title="About me">About me</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" title="My projects">My projects</a>
+          </li>
+          <li>
+            <a href="./contact.html" title="Contact me">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- MOBILE NAVIGATION -->
+  <nav class="mobile-nav header-nav">
+    <div class="container">
+      <div class="row">
+        <div id="mobile-menu" class="col-lg-12">
+          <!-- Auto Copy Header Navigation -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <main>
+    <div class="container">
+      <div class="articles-blog-post">
+        <div class="row">
+          <div class="col-xs-12 col-lg-12">
+            <article class="articles">
+              <div class="articles-header">
+                <time datetime="2019-10-10">5 Years ago</time>
+                <span class="articles-header-tag">New</span>
+                <span class="articles-header-category">
+                  <a href="#" class="green" title="">Graphic</a>
+                </span>
+              </div>
+              <div class="articles-content px-8">
+                <h1 class="articles-content-block-title h4 fw-700">
+                  <a href="#" title="Build Pixar USD">
+                    Build Pixar USD
+                  </a>
+                </h1>
+
+                <h3 class="articles-content-block-title h4 fw-900">
+                  <a style="color: blue;" href="https://github.com/AbedSHP/USD_Maya"> Build Pixar USD Github </a>
+                </h3>
+
+                <h3 id="build-status">Build Status</h3>
+                <hr>
+                <table>
+                  <thead>
+                    <tr>
+                      <th></th>
+
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>WIN64</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>=======</p>
+                <h3 id="usd-and-usd-for-maya-windows-64bit-only-">USD and USD FOR MAYA (WINDOWS 64bit ONLY)</h3>
+                <p>Built USD from PixarAnimationStudios/USD</p>
+                <p>Require for Build :</p>
+                <ul>
+                  <li>Maya 2018 !</li>
+                  <li>visual studio 2017 14.1 MSVC or Build Tools</li>
+                  <li>Python 2.7.5 to higher</li>
+                  <li>Cmake 3.9 </li>
+                  <li>nasm 2.07 to higher</li>
+                </ul>
+                <h2 id="download-and-install">Download and Install</h2>
+                <h4 id="maya-2018">Maya 2018</h4>
+                <pre><code class="lang-bash">https:<span class="hljs-regexp">//</span>www.autodesk.com<span class="hljs-regexp">/products/m</span>aya<span class="hljs-regexp">/overview</span>
+                  </code></pre>
+                <h4 id="visual-studio-2017">visual studio 2017</h4>
+                <pre><code class="lang-bash">https:<span class="hljs-regexp">//</span>visualstudio.microsoft.com<span class="hljs-regexp">/downloads/</span>
+                  </code></pre>
+                <h4 id="python-2-7-5">Python 2.7.5</h4>
+                <pre><code class="lang-bash">https:<span class="hljs-regexp">//</span>www.python.org<span class="hljs-regexp">/download/</span>releases<span class="hljs-regexp">/2.7.5/</span>
+                  </code></pre>
+                <h4 id="cmake-3-9">Cmake 3.9</h4>
+                <pre><code class="lang-bash"><span class="hljs-symbol">https:</span>//cmake<span class="hljs-meta">.org</span>/files/v3<span class="hljs-number">.9</span>/
+                  </code></pre>
+                <h4 id="nasm-2-13">nasm 2.13</h4>
+                <pre><code class="lang-bash">https:<span class="hljs-regexp">//</span>www.nasm.us<span class="hljs-regexp">/pub/</span>nasm<span class="hljs-regexp">/releasebuilds/</span><span class="hljs-number">2.13</span><span class="hljs-regexp">/</span>
+                  </code></pre>
+                <h2 id="start">Start</h2>
+                <p>Copy Git and Git clone in Main Reposotory</p>
+                <pre><code class="lang-bash">https:<span class="hljs-regexp">//gi</span>thub.com<span class="hljs-regexp">/PixarAnimationStudios/</span>USD
+                  </code></pre>
+                <p>For Example to :</p>
+                <pre><code class="lang-bash"><span class="hljs-symbol">C:</span>\USD
+                  </code></pre>
+                <p>Open CMD as Administrator and go this Directory</p>
+                <pre><code class="lang-bash">C:<span class="hljs-symbol">\U</span>SD<span class="hljs-symbol">\b</span>uild_scripts
+                  </code></pre>
+                <p>Main command for Build</p>
+                <pre><code class="lang-bash">python build_usd<span class="hljs-selector-class">.py</span> C:\USD\Build
+                  </code></pre>
+                <p>add to ENV</p>
+                <pre><code class="lang-bash"><span class="hljs-symbol">C:</span>\USD\Build\<span class="hljs-class"><span class="hljs-keyword">lib</span>\<span class="hljs-title">python</span> <span class="hljs-title">to</span> <span class="hljs-title">PYTHONPATH</span>
+                </code></pre>
+                <pre><code
+                <span class="hljs-symbol">C:</span>\USD\Build\bin , <span class="hljs-symbol">C:</span>\USD\Build\<span class="hljs-class"><span class="hljs-keyword">lib</span> <span class="hljs-title">to</span> <span class="hljs-title">PATH</span></span>
+                </code></pre>  
+
+                <p>For Test</p>
+                <pre><code class="lang-bash">usdview C:<span class="hljs-symbol">\U</span>SD<span class="hljs-symbol">\e</span>xtras<span class="hljs-symbol">\u</span>sd<span class="hljs-symbol">\t</span>utorials<span class="hljs-symbol">\c</span>onvertingLayerFormats<span class="hljs-symbol">\S</span>phere.usda
+                  </code></pre>
+
+
+              </div>
+          </div>
+          </article>
+        </div>
+
+
+
+
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <footer>
+    <!-- COPYRIGHT -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="copyright d-flex align-items-center justify-content-between flex-column flex-md-row-reverse ">
+            <ul class="d-flex">
+              <li><a href="#" class="social-icon" title="Github"><i class="fab fa-github"></i></a></li>
+              <li><a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="#" class="social-icon" title="Telegram"><i class="fab fa-telegram"></i></a></li>
+            </ul>
+            <p>&copy; Abed <a href="#" title="">Shokrollazadeh</a>.
+              2024.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end COPYRIHT -->
+  </footer>
+  <!-- end FOOTER -->
+
+
+
+  <script type="text/javascript" src="./lib/glide.min.js" defer></script>
+  <script type="text/javascript" src="./lib/bootstrap.min.js" defer></script>
+  <script type="text/javascript" src="./lib/reframe.js" defer></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
