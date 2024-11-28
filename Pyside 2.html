@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preload" as="font" href="./fonts/lato-v20-latin-ext_latin-regular.woff2" type="font/woff2">
+  <link rel="preload" as="font" href="./fonts/lato-v20-latin-ext_latin-700.woff2" type="font/woff2">
+  <link rel="preload" as="font" href="./fonts/lato-v20-latin-ext_latin-900.woff2" type="font/woff2">
+  <link rel="preload" as="font" href="./fonts/merriweather-v27-latin-ext_latin-regular.woff2" type="font/woff2">
+  <link rel="preload" as="font" href="./fonts/merriweather-v27-latin-ext_latin-700.woff2" type="font/woff2">
+  <link rel="preload" as="font" href="./fonts/merriweather-v27-latin-ext_latin-900.woff2" type="font/woff2">
+  <link rel="preload" as="font" href="./fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.woff" type="font/woff">
+  <link rel="stylesheet" href="css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Build Pixar USD</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+
+      <nav class="header-nav d-none d-lg-block">
+        <ul class="d-block d-lg-flex">
+          <li class="active">
+            <a href="index.html" title="Start page">Home</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" title="Blog articles">Blog articles</a>
+            <ul class="dropdown-menu">
+              <li class="nav-elipse-blue">
+                <a href="./blog_list.html" title="Blog CSS articles">Graphic</a>
+              </li>
+              <li class="nav-elipse-red">
+                <a href="./blog_list.html" title="Blog HTML articles">Electronic</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="./about_me.html" title="About me">About me</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" title="My projects">My projects</a>
+          </li>
+          <li>
+            <a href="./contact.html" title="Contact me">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- MOBILE NAVIGATION -->
+  <nav class="mobile-nav header-nav">
+    <div class="container">
+      <div class="row">
+        <div id="mobile-menu" class="col-lg-12">
+          <!-- Auto Copy Header Navigation -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <main>
+    <div class="container">
+      <div class="articles-blog-post">
+        <div class="row">
+          <div class="col-xs-12 col-lg-12">
+            <article class="articles">
+              <div class="articles-header">
+                <time datetime="2019-10-10">5 Years ago</time>
+                <span class="articles-header-tag">New</span>
+                <span class="articles-header-category">
+                  <a href="#" class="green" title="">Graphic</a>
+                </span>
+              </div>
+              <div class="articles-content px-8">
+                <h1 class="articles-content-block-title h4 fw-700">
+                  <a href="#" title="Pyside2_Maya">
+                    Pyside2_Maya
+                  </a>
+                </h1>
+
+                <h3 class="articles-content-block-title h4 fw-900">
+                  <a style="color: blue;" href="https://github.com/AbedSHP/Pyside2_Maya"> Pyside2 for Maya Github </a>
+                </h3>
+
+                <h1 id="pyside2_maya">Pyside2_Maya</h1>
+<h3 id="pyside2">Pyside2</h3>
+<p>Pyside2 for 2018 ~ 2024 ( Windows &amp; Linux &amp; MAC )</p>
+<p>Notice: 
+PyQt does not have the same licensing as Maya, Qt, or Python.
+Please consult the PyQt website for information about licensing for PyQt.</p>
+<p>to this :</p>
+<pre><code class="lang-bash"><span class="hljs-keyword">import</span> sys
+<span class="hljs-keyword">from</span> PySide2 <span class="hljs-keyword">import</span> QtCore
+<span class="hljs-keyword">from</span> PySide2.QtWidgets <span class="hljs-keyword">import</span> QApplication, QMainWindow ,QLineEdit, QPushButton, QApplication,QVBoxLayout, QDialog
+
+folderPath = <span class="hljs-string">"D:../Rana/img"</span>
+sys.path.append(folderPath)
+
+<span class="hljs-keyword">from</span> Ui_main <span class="hljs-keyword">import</span> Ui_MainWindow   
+
+<span class="hljs-keyword">from</span> PySide2.QtWidgets  <span class="hljs-keyword">import</span> QApplication, QMainWindow
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainWindow</span><span class="hljs-params">(QMainWindow, Ui_MainWindow)</span>:</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, parent=None)</span>:</span>
+        QMainWindow.__init__(self, <span class="hljs-keyword">None</span>, QtCore.Qt.WindowStaysOnTopHint)
+        self.setupUi(self)
+
+        self.setWindowTitle(<span class="hljs-string">"Rana GUI"</span>)
+
+
+
+<span class="hljs-keyword">if</span> (__name__ == <span class="hljs-string">'__main__'</span>):
+
+    app = QApplication(sys.argv)
+
+    mainWindow = MainWindow()
+
+    mainWindow.show()
+
+    sys.exit(app.exec_())
+</code></pre>
+<p>Run Script in Maya Script Editor: 2018 ~ 2024 :</p>
+<pre><code class="lang-bash">
+<span class="hljs-keyword">import</span> sys
+
+path = <span class="hljs-string">r"D:\tmp\Project_Rana\scripts\Rana"</span>
+<span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> path <span class="hljs-keyword">in</span> sys.path:
+
+    sys.path.append(path)
+
+<span class="hljs-keyword">import</span> GUI
+<span class="hljs-keyword">import</span> importlib
+importlib.reload(GUI)
+
+fb = GUI.MainWindow()
+fb.show()
+</code></pre>
+<p>
+  <img src="https://github.com/AbedSHP/Pyside2_Maya/blob/main/Rana/SCN_Rana%20GUI.jpg" alt="">
+</p>
+
+
+
+              </div>
+          </div>
+          </article>
+        </div>
+
+
+
+
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <footer>
+    <!-- COPYRIGHT -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="copyright d-flex align-items-center justify-content-between flex-column flex-md-row-reverse ">
+            <ul class="d-flex">
+              <li><a href="#" class="social-icon" title="Github"><i class="fab fa-github"></i></a></li>
+              <li><a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="#" class="social-icon" title="Telegram"><i class="fab fa-telegram"></i></a></li>
+            </ul>
+            <p>&copy; Abed <a href="#" title="">Shokrollazadeh</a>.
+              2024.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end COPYRIHT -->
+  </footer>
+  <!-- end FOOTER -->
+
+
+
+  <script type="text/javascript" src="./lib/glide.min.js" defer></script>
+  <script type="text/javascript" src="./lib/bootstrap.min.js" defer></script>
+  <script type="text/javascript" src="./lib/reframe.js" defer></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
